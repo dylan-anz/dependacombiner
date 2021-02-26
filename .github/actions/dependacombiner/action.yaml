@@ -1,0 +1,12 @@
+name: 'dependacombiner'
+description: 'Combines all check-passing dependabot prs into a single pr'
+author: 'dbut2'
+inputs:
+  name:
+    required: true
+    default: 'Anonymous'
+runs:
+  using: 'composite'
+  steps:
+    - run: echo Hello ${{ inputs.name }}.
+      shell: bash
