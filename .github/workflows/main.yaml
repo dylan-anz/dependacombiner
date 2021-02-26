@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: foo
-        uses: dylan-anz/dependacombiner@v1
+        uses: dylan-anz/dependacombiner
         with:
           name: 'Dylan'
